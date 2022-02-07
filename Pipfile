@@ -8,6 +8,8 @@ django = "==4.0.1"
 environs = "*"
 dj-database-url = "*"
 psycopg2 = "*"
+whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
