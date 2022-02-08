@@ -30,7 +30,7 @@ SECRET_KEY =  env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  True #env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', ] #  '.herokuapp.com', You can add more production url here!
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'user-admin-template.herokuapp.com' ] #  '.herokuapp.com', You can add more production url here!
 
 
 # Application definition
