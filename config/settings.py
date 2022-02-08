@@ -44,9 +44,22 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
      
-     # my-apps
-     'start',
+    # my-apps
+    'accounts',
+    'start',
+
+    # 3rd party
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
+
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
+# bootstrap
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
 MIDDLEWARE = [
@@ -127,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'hu-hu' # 'en-us'
 
 TIME_ZONE = 'UTC'
 
@@ -159,3 +172,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
