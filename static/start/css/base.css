@@ -2,3 +2,10 @@
 body {
     background-color: rgb(231, 227, 206);
 }
+
+/* form labels */
+
+label {
+    color: rgb(101, 125, 145);
+    font-weight:bold;
+}

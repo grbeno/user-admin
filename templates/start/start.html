@@ -1,0 +1,10 @@
+{% extends 'start/base.html' %}
+{% block title%}Home{% endblock title %}
+
+{% block content %}
+<h1 class="d-flex pb-5 justify-content-center text-success">Start</h1>
+<hr>
+<div class="d-flex p-2 justify-content-center">
+    <a href="{% url 'home' %}"><h4 class="h1 m-4 text-secondary"><i class="fa fa-child"></i></h4></a>
+</div>
+{% endblock content %}
